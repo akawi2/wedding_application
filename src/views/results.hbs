@@ -1,0 +1,194 @@
+<html>
+    <head>
+        <title>Wedding program page</title>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.4/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+        <style>
+            body {
+                display: flex;
+                flex-direction: column;
+                min-height: 100vh;
+            }
+
+            .nav-item{
+                color:#222222; background-color:#FDFDFD; border-radius: 10px; 
+            }
+
+            .btn{
+                background-color: #FDFDFD;
+                color: #FFA0A1;
+            }
+            .btn:hover{
+                
+                background-color: #e5b4fc; border-color: #FDFDFD; color: #FDFDFD;
+
+            }
+    
+            .nav-item:hover {
+            background-color: #e5b4fc;
+            color: #FDFDFD;
+            }
+            main {
+                flex: 1;
+ 
+            }
+         
+
+            
+             #logo-label{
+                color: #222222; border-radius: 5px; font-size: 20;
+             }
+
+             .navbar{
+                background-color: #FFA0A1; 
+             }
+             .main-body{
+                background-color: #FFA0A1; opacity: 1; 
+             }
+
+             .card-title{
+                color: #FFA0A1;
+             }
+            
+        </style>
+
+    </head>
+
+    <body>
+
+
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light" >
+                
+                <a class="navbar-brand" href="/">
+                    <img src="static/images/ring.png" alt="" height="100px" width="100x"></a>
+                <div class="d-flex  align-items-center flex-grow-1">
+                    <span class="fw-bold text-center" id="logo-label">Stella & Esaie</span>
+                </div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+        
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-6">
+                        <li class="nav-item">
+                            <a class="nav-link welcome-text font-weight-bold" href="/">Confirmation</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        
+        <main class="main-body">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card m-4">
+                        <img class="card-img-top" src="static/images/mairie.jpg" alt="Card image cap">
+                        <div class="card-body">
+                           <center><h5 class="mb-3" style="color: #FFD966;"><b id="gtitle" name="gtitle"></b></h5></center> 
+                           <span><center>VOTE  :  <h5 class="mb-3"><b id="gcount" name="gcount"></b></h5></center></span>
+                           <center><h6 class="mb-3"><b>Garcons</b></h6></center>
+                        </div>
+                    </div>
+                </div>
+         
+                <div class="col-md-2">
+                    <div class="card m-3 pt-3">
+                            <center><h4 class="card-subtitle mb-3 center"><b>VS</b></h4></center>
+                        </div>
+                    </div>
+
+                <div class="col-md-4">
+                    <div class="card m-4">
+                        <img class="card-img-top" src="static/images/reception.jpg" alt="Card image cap">
+                        <div class="card-body">
+                           <center><h5 class="card-title mb-3" id="ftitle"><b ></b></h5></center>
+                           <span><center>VOTE  :  <h5 class="mb-3"><b id="fcount"></b></h5></center></span>
+                            <center><h6 class="mb-3"><b>Filles</b></h6></center>
+                        </div>
+                    </div>
+                   </div>
+                </div>
+        
+            </div>
+
+
+        </main>
+          
+        <footer class="bg-light text-center text-lg-start mt-auto" >
+            <div class="col-12 mb-0" style="background-color: #FFA0A1; border-color: #222222;">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-4 welcome-text" style="color:#FFD966; background-color: #FDFDFD;">Contact</h6>
+            <p class="text-light">
+                <i class="fas fa-envelope"></i>          
+                <a href="" style="color: white;"><span style="color: #222222;" >Ésaïe : </span>+237 651 11 83 54</a> 
+            </p>
+            <!-- <p class="text-light">
+                <i class="fas fa-envelope"></i>          
+                <a href="" style="color: white;"><span style="color: #222222;" >Stella : </span>688888888</a> 
+            </p>  -->
+            <div class="mb-3">
+                <span class="text-light m-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-telephone" viewBox="0 0 16 16"> <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/> </svg>
+                </span>
+                <span class="text-light m-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#4CAF50" class="bi bi-whatsapp" viewBox="0 0 16 16">
+                        <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+                    </svg>       
+                </span>
+            </div>
+            <p class="text-light">
+                <i class="fas fa-envelope"></i>          
+                <a href="" style="color: black;"><span style="color: #FDFDFD;" >NB : </span> Vous pouvez nous joindre via ces canaux merci !!</a> 
+            </p> 
+            
+                <!-- Copyright -->
+                <div class="text-center p-2 col-12 mt-0" style="width: 100%; background-color: #FFA0A1;  ">
+                <p style="color: #FDFDFD; margin-bottom: 0;">© 2024 Copyright:
+                    <a class="" style="color: #222222;" href="">........... </a>
+                </p>
+                </div>
+                <!-- Copyright -->
+            </div>
+            </footer>
+    
+
+
+          <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+          <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
+<script>
+        // Get the URL parameters
+    const urlParams = new URLSearchParams(window.location.search);
+
+    // Retrieve the results parameter from the URL
+    const resultsParam = urlParams.get('results');
+
+    // Parse the results parameter value
+    const results = JSON.parse(decodeURIComponent(resultsParam));
+
+    // Get the values of gtitle, ftitle, gcount, and fcount
+    const gtitle = results.gtitle;
+    const ftitle = results.ftitle;
+    const gcount = results.gcount;
+    const fcount = results.fcount;
+
+    // Update the content of the <h5> elements with the values
+    document.getElementById('gtitle').textContent = gtitle;
+    document.getElementById('ftitle').textContent = ftitle;
+    document.getElementById('gcount').textContent = gcount;
+    document.getElementById('fcount').textContent = fcount;
+</script>
+
+
+
