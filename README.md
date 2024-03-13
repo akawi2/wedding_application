@@ -1,4 +1,6 @@
+<<<<<<< HEAD
 <p align="center">
+  <span></span>
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
 </p>
 
@@ -71,3 +73,7 @@ Nest is an MIT-licensed open source project. It can grow thanks to the sponsors 
 ## License
 
 Nest is [MIT licensed](LICENSE).
+=======
+# wedding_application
+this application enables users to connect to the marrage plateform where they can confirm, view activities for the marriage and vote for the best danser during reception battle animation
+>>>>>>> origin/main
