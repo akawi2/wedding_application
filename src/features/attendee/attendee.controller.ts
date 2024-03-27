@@ -35,6 +35,7 @@ export class AttendeeController {
 
     @Get('validate')
     async validatePresence(@Query('presence') presence: string, @Query('code') code : string, @Res() res: Response){
+      
       const attendee = this.attendeeService.validatePresence(code, presence);
         if (attendee) {
             res.redirect('/faire_part');

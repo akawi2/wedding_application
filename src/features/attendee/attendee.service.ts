@@ -1,4 +1,4 @@
-import { Injectable } from '@nestjs/common';
+import { HttpException, HttpStatus, Injectable } from '@nestjs/common';
 import { Attendee } from 'src/model/attendee.model';
 import { AttendeeDto } from './dto/attendee.dto';
 import { InjectRepository } from '@nestjs/typeorm';
@@ -37,11 +37,17 @@ export class AttendeeService {
 
 
     async validatePresence(code : string,presence: string): Promise<Attendee>{
+        console.log(" ---------!!!!!!!!!!!!!!!!!!!!!!----------")
+        console.log(code)
+        console.log(presence)
+
         const attendee = await this.attendeeRepository.findOne({where: {code: code}});
         attendee.validate = presence
-         await this.attendeeRepository.save(attendee);
-        return attendee;
-    }
+        const savedPresence = await this.attendeeRepository.save(attendee);
+        console.log(savedPresence)
+        //throw new HttpException( savedPresence, HttpStatus.BAD_REQUEST)
+        return savedPresence;
+    }   
 
     async getAttendees(): Promise<Attendee[]>{
         let attendees = []
